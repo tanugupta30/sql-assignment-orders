@@ -1016,5 +1016,6 @@ insert into Orders (CustomerID, OrderDate, ProductID, Quantity) values (1000, '2
 -- we can't be able to search faster by using this reason behind it will sort the data based on customerId and their is no tie betweem customerId, orderDate we couldn't able to make use of orderDate.
 --CREATE INDEX idx_CustomerID_OrderDate ON Orders (CustomerID, OrderDate);
 -- Better approach we can apply index on customerId it would be much faster in that case.
-CREATE INDEX idx_CustomerID_OrderDate ON Orders (CustomerID);
+CREATE INDEX idx_CustomerID_OrderDate ON Orders(CustomerID);
+
 
